@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkblue;
+}
+
+/* genereal uses class  */
+h3,
+i {
+    color: orange;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p,
+h4 {
+    margin: 1rem 0;
+}
+
+.main-padding {
+    padding: 4rem 6rem;
+}
+
+.display-f {
+    display: flex;
+}
+
+.align-c {
+    align-items: center;
+}
+
+.align-text-c {
+    text-align: center;
+}
+
+.inner-box-padding {
+    padding: 1.5rem 2rem;
+}
+
+/* header section  */
+header {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+header i {
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+header i:hover {
+    color: rgb(201, 131, 2);
+}
+
+.header-right {
+    margin-left: auto;
+}
+
+.header-right i {
+    font-size: 2rem;
+}
+
+/* navbar section */
+.nav {
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li a {
+    padding: 0.6rem 1rem;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.nav ul li a:hover {
+    background: orange;
+    color: white;
+}
+
+.nav button {
+    padding: 0.6rem 1rem;
+    background: orange;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+}
+
+.nav button:hover {
+    color: black;
+    background-color: rgb(201, 131, 2);
+}
+
+/* Home section  */
+#home {
+    background-color: rgb(42, 255, 212);
+    justify-content: space-between;
+}
+
+.home-info {
+    width: 60%;
+}
+
+.home-info button i {
+    color: white;
+}
+
+.home-info button {
+    padding: 1rem 1.5rem;
+    background: orange;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+
+.home-info button:hover {
+    color: black;
+    background-color: rgb(218, 168, 77);
+}
+
+/* About section  */
+.about-info {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Feature section  */
+#feature {
+    background-color: bisque;
+}
+
+.feature-info {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* footer section  */
+footer {
+    padding: 0.4rem 1rem;
+    background: #000;
+    color: white;
+}
+
+/* for responsice web design  */
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    img{
+        width: 50%;
+        height: 50%;
+    }
+    .header-right i, .fa-2x {
+        font-size: 20px;
+    }
+    .nav button, .nav ul li a, .home-info button {
+        padding: 0.3rem 0.4rem;
+        font-weight: normal;
+        border-radius: 4px;
+    }
+    .main-padding {
+        padding: 2rem 3rem;
+    }
+    .inner-box-padding{
+        padding: 0.8em;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    p, h4{
+        margin: 0.5rem 0;
+    }
+    .featureBox{
+        align-items: center;
+    }
+    
+}
+
+@media only screen and (max-width: 640px) {
+    body,
+    i {
+        font-size: small;
+    }
+
+    header, .inner-box-padding {
+        padding: 0.4rem 1rem;
+    }
+
+    .header-right i, .fa-2x{
+        font-size: 1.2rem;
+        margin: 0.1rem;
+    }
+    .nav button, .nav ul li a, .home-info button {
+        padding: 0.2rem 0.3rem;
+        font-size:small;
+        font-weight: normal;
+        border-radius: 4px;
+    }
+    .main-padding{
+        padding: 1rem 2rem;
+    }
+    img {
+        width: 40%;
+        margin: auto;
+    }
+    #home,.productBox,.featureBox {
+        flex-direction: column;
+    }
+}
